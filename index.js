@@ -3,8 +3,10 @@ function produceDrivingRange() {
 }
 
 
-function produceTipCalculator() {
-  
+function produceTipCalculator(percentage) {
+  return function(rideFare) {
+    return rideFare * percentage;
+  }
 }
 
 
